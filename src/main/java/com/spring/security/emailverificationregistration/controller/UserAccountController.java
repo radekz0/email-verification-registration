@@ -85,31 +85,6 @@ public class UserAccountController {
             modelAndView.addObject("message","The link is invalid or broken!");
             modelAndView.setViewName("error");
         }
-
         return modelAndView;
-    }
-
-    public UserRepository getUserRepository() {
-        return userRepository;
-    }
-
-    public void setUserRepository(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
-    public ConfirmationTokenRepository getConfirmationTokenRepository() {
-        return confirmationTokenRepository;
-    }
-
-    public void setConfirmationTokenRepository(ConfirmationTokenRepository confirmationTokenRepository) {
-        this.confirmationTokenRepository = confirmationTokenRepository;
-    }
-
-    public EmailSenderService getEmailSenderService() {
-        return emailSenderService;
-    }
-
-    public void setEmailSenderService(EmailSenderService emailSenderService) {
-        this.emailSenderService = emailSenderService;
     }
 }

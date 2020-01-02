@@ -7,6 +7,16 @@ import java.util.UUID;
 @Entity
 public class ConfirmationToken {
 
+    public ConfirmationToken(){
+    }
+
+    public ConfirmationToken(long tokenid, String confirmationToken, Date createdDate, User user) {
+        this.tokenid = tokenid;
+        this.confirmationToken = confirmationToken;
+        this.createdDate = createdDate;
+        this.user = user;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="token_id")
